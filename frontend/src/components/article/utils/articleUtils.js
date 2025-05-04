@@ -100,7 +100,7 @@ export const fetchWordTranslation = async (word, stemCache = {}) => {
     // Get the lemmatized form to send to the API
     const lemmatizedWord = getStemmedWord(word, stemCache);
     
-    const response = await fetch(`http://app_backend:8080/api/translate/${lemmatizedWord}`);
+    const response = await fetch(`http://localhost:8080/api/translate/${lemmatizedWord}`);
     
     if (response.ok) {
       const data = await response.json();
