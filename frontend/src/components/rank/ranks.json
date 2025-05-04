@@ -1,0 +1,54 @@
+{
+    "ranks": [
+      {
+        "name": "Tahta",
+        "levels": [
+          { "globalLevel": 1, "requiredXp": 15 },
+          { "globalLevel": 2, "requiredXp": 20 },
+          { "globalLevel": 3, "requiredXp": 30 },
+          { "globalLevel": 4, "requiredXp": 40 },
+          { "globalLevel": 5, "requiredXp": 55 }
+        ]
+      },
+      {
+        "name": "Demir",
+        "levels": [
+          { "globalLevel": 6, "requiredXp": 70 },
+          { "globalLevel": 7, "requiredXp": 80 },
+          { "globalLevel": 8, "requiredXp": 95 },
+          { "globalLevel": 9, "requiredXp": 110 },
+          { "globalLevel": 10, "requiredXp": 130 }
+        ]
+      },
+      {
+        "name": "Yakut",
+        "levels": [
+          { "globalLevel": 11, "requiredXp": 150 },
+          { "globalLevel": 12, "requiredXp": 170 },
+          { "globalLevel": 13, "requiredXp": 190 },
+          { "globalLevel": 14, "requiredXp": 220 },
+          { "globalLevel": 15, "requiredXp": 250 }
+        ]
+      },
+      {
+        "name": "Zümrüt",
+        "levels": [
+          { "globalLevel": 16, "requiredXp": 310 },
+          { "globalLevel": 17, "requiredXp": 380 },
+          { "globalLevel": 18, "requiredXp": 450 },
+          { "globalLevel": 19, "requiredXp": 550 },
+          { "globalLevel": 20, "requiredXp": 660 }
+        ]
+      },
+      {
+        "name": "Ametist",
+        "levels": [
+          { "globalLevel": 21, "requiredXp": 770 },
+          { "globalLevel": 22, "requiredXp": 880 },
+          { "globalLevel": 23, "requiredXp": 1000 },
+          { "globalLevel": 24, "requiredXp": 1100 },
+          { "globalLevel": 25, "requiredXp": 1200 }
+        ]
+      }
+    ]
+  }

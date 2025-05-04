@@ -1,0 +1,153 @@
+.word-strip {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.word-strip:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.word-strip-main {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  min-height: 60px;
+}
+
+.word-strip-english {
+  width: 25%;
+  min-width: 150px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.word-strip-english h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff6200;
+}
+
+.word-strip-translations {
+  flex-grow: 1;
+  padding: 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.word-strip-translations p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+.word-strip-actions {
+  display: flex;
+  align-items: center;
+  min-width: 90px;
+  justify-content: flex-end;
+}
+
+.delete-btn,
+.expand-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.word-strip-details {
+  background-color: rgba(248, 249, 250, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.details-header {
+  margin-bottom: 15px;
+}
+
+.details-content {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.article-badge {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.translations-title {
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+.translations-container {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.translations-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.translation-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed #e9ecef;
+}
+
+.translation-item:last-child {
+  border-bottom: none;
+}
+
+/* Scrollbar styling */
+.translations-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.translations-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.translations-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.translations-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .word-strip-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .word-strip-english {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .word-strip-translations {
+    width: 100%;
+    padding: 8px 0;
+    margin-bottom: 8px;
+  }
+  
+  .word-strip-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+} 

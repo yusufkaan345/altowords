@@ -1,0 +1,83 @@
+.word-card {
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+
+.word-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.word-card-body {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.word-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.delete-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.word-type {
+  font-style: italic;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.article-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  background-color: #17a2b8;
+  margin-bottom: 1rem;
+}
+
+.translations-container {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px;
+  padding-right: 5px;
+}
+
+.translations-list {
+  list-style: none;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.translation-item {
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed #e9ecef;
+}
+
+/* Custom scrollbar */
+.translations-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.translations-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.translations-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.translations-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+} 

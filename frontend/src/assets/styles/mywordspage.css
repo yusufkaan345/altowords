@@ -1,0 +1,147 @@
+.my-words-page {
+  min-height: 100vh;
+  background-image: url('../images/book.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.filter-card, .stats-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.596);
+}
+
+.filter-title, .stats-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #0082b5;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.8rem;
+  
+}
+
+.stats-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #007daf;
+
+}
+
+/* Word Cards */
+.word-card {
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.596);
+}
+
+.word-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.word-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.article-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  background-color: #17a2b8;
+}
+
+.translations-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #495057;
+}
+
+.translations-list {
+  list-style: none;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.translations-list li {
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed #e9ecef;
+}
+
+.translations-list li:last-child {
+  border-bottom: none;
+}
+
+.delete-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Word Strips Container */
+.word-strips-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.spinner {
+  color: #007bff;
+  width: 3rem;
+  height: 3rem;
+}
+
+.no-words-message {
+  text-align: center;
+  margin: 5rem 0;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.no-words-message p {
+  font-size: 1.2rem;
+  color: #3f4b4b;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .word-title {
+    font-size: 1.3rem;
+  }
+  
+  .sidebar {
+    margin-bottom: 2rem;
+  }
+} 
